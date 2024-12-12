@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educational Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/3cbcb0a7ed.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <nav>
+                <div class="logo">
+                    <img src="images/logo.png" alt="Logo">
+                </div>
+                <div class="links">
+                    <ul>
+                        <li><a href="homepage.html">Home</a></li>
+                        <li><a href="coursespage.html">Courses</a></li>
+                        <li><a href="achivements.html">Achivements</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="testimonials.html">Testimonial</a></li>
+                    </ul>
+                </div>
+                <div class="sign">
+                    <a href="#">Login</a>
+                    <a href="#" id="signUp">Sign Up</a>
+                </div>
+            </nav>
+            <div class="contact-details">
+                <div class="info">
+                    <p>Phone Number: +123 456 7890</p>
+                    <div class="vl"></div>
+                    <p>Email: info@gmail.com</p>
+                </div>
+                <div class="social-info">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-x-twitter"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="course-category">
+                <div class="heading">
+                    <h1>Explore Courses By Category</h1>
+                    <p>Discover a wide range of courses covering a veriety of subjects, taught by expert instructors.</p>
+                </div>
+                <div class="courses">
+                    <div class="row-one">
+                        <div>
+                            <div class="div-image">
+                                <img src="images/pen-tool-2.png">
+                            </div>
+                            <div class="text">
+                                <h3>Design & Development</h3>
+                                <p id="courseAvailable">50+ Courses Available</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="div-image">
+                                <img src="images/volume-high.png">
+                            </div>
+                            <div class="text">
+                                <h3>Marketing</h3>
+                                <p>50+ Courses Available</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="div-image">
+                                <img src="images/group.png">
+                            </div>
+                            <div class="text">
+                                <h3>Development</h3>
+                                <p>50+ Courses Available</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row-two">
+                        <div>
+                            <div class="div-image">
+                                <img src="images/microphone.png">
+                            </div>
+                            <div class="text">
+                                <h3>Communication</h3>
+                                <p>50+ Courses Available</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="div-image">
+                                <img src="images/link.png">
+                            </div>
+                            <div class="text">
+                                <h3>Digital Marketing</h3>
+                                <p>50+ Courses Available</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="div-image">
+                                <img src="images/arrow-2.png">
+                            </div>
+                            <div class="text">
+                                <h3>Self Development</h3>
+                                <p>50+ Courses Available</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row-three">
+                        <div>
+                            <div class="div-image">
+                                <img src="images/briefcase.png">
+                            </div>
+                            <div class="text">
+                                <h3>Business</h3>
+                                <p>50+ Courses Available</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="div-image">
+                                <img src="images/open book.png">
+                            </div>
+                            <div class="text">
+                                <h3>Finance</h3>
+                                <p>50+ Courses Available</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="div-image">
+                                <img src="images/book.png">
+                            </div>
+                            <div class="text">
+                                <h3>Consulting</h3>
+                                <p>50+ Courses Available</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <a href="#" id="ViewCourses">View All Courses</a>
+            </div>
+            <div class="courses">
+                <div class="heading">
+                    <h1>Courses</h1>
+                    <p>Your Ultimate Guide To Learning</p>
+                </div>
+                <div class="courses-links">
+                    <p class="course-links active-link" onclick="openCourse('popular', event)">Popular</p>
+                    <p class="course-links" onclick="openCourse('recomended', event)">Recomsended</p>
+                    <p class="course-links" onclick="openCourse('best', event)">Best Price</p>
+                </div>
+                <div class="courses-display">
+                    <div class="course-contents active-content" id="popular">
+                        <div class="row-one">
+                            <div>
+                                <img src="images/course1.png">
+                                <div class="titile-rating">
+                                    <p>Design</p>
+                                    <div class="star">
+                                        <i class="fa fa-star-o"></i>
+                                        <p>5.0</p>
+                                    </div>   
+                                </div>
+                                <div class="course-title">
+                                    <h3>UX/UI Design 201</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse eos, voluptates nam.</p>
+                                </div>
+                                <div class="enroll">
+                                    <a href="#">Enroll Now</a>
+                                    <p>$400.00</p>
+                                </div>
+                            </div>
+                            <div>
+                                <img src="images/course2.png">
+                                <div class="titile-rating">
+                                    <p>Programming</p>
+                                    <div class="star">
+                                        <i class="fa fa-star-o"></i>
+                                        <p>5.0</p>
+                                    </div>
+                                </div>
+                                <div class="course-title">
+                                    <h3>Introduction to Python</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Esse eos, voluptates nam.</p>
+                                </div>
+                                <div class="enroll">
+                                    <a href="#">Enroll Now</a>
+                                    <p>$400.00</p>
+                                </div>
+                            </div>
+                            <div>
+                                <img src="images/course3.png">
+                                <div class="titile-rating">
+                                    <p>Business</p>
+                                    <div class="star">
+                                        <i class="fa fa-star-o"></i>
+                                        <p>5.0</p>
+                                    </div>
+                                </div>
+                                <div class="course-title">
+                                    <h3>Data Analysis for Beginners</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse eos, voluptates nam.</p>
+                                </div>
+                                <div class="enroll">
+                                    <a href="#">Enroll Now</a>
+                                    <p>$400.00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row-two">
+                            <div>
+                                <img src="images/course4.png">
+                                <div class="titile-rating">
+                                    <p>Art</p>
+                                    <div class="star">
+                                        <i class="fa fa-star-o"></i>
+                                        <p>5.0</p>
+                                    </div>   
+                                </div>
+                                <div class="course-title">
+                                    <h3>Art Specialization</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse eos, voluptates nam.</p>
+                                </div>
+                                <div class="enroll">
+                                    <a href="#">Enroll Now</a>
+                                    <p>$400.00</p>
+                                </div>
+                            </div>
+                            <div>
+                                <img src="images/course5.png">
+                                <div class="titile-rating">
+                                    <p>Law</p>
+                                    <div class="star">
+                                        <i class="fa fa-star-o"></i>
+                                        <p>5.0</p>
+                                    </div>
+                                </div>
+                                <div class="course-title">
+                                    <h3>Rule of Law</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Esse eos, voluptates nam.</p>
+                                </div>
+                                <div class="enroll">
+                                    <a href="#">Enroll Now</a>
+                                    <p>$400.00</p>
+                                </div>
+                            </div>
+                            <div>
+                                <img src="images/course6.png">
+                                <div class="titile-rating">
+                                    <p>Tech</p>
+                                    <div class="star">
+                                        <i class="fa fa-star-o"></i>
+                                        <p>5.0</p>
+                                    </div>
+                                </div>
+                                <div class="course-title">
+                                    <h3>Introduction to webflow</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse eos, voluptates nam.</p>
+                                </div>
+                                <div class="enroll">
+                                    <a href="#">Enroll Now</a>
+                                    <p>$400.00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row-three">
+                            <div>
+                                <video  autoplay muted loop>
+                                    <source src="videos/video1.mp4">
+                                </video>
+                                <div class="titile-rating">
+                                    <p>Networking</p>
+                                    <div class="star">
+                                        <i class="fa fa-star-o"></i>
+                                        <p>5.0</p>
+                                    </div>
+                                </div>
+                                <div class="course-title">
+                                    <h3>Network Programing</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse eos, voluptates nam.</p>
+                                </div>
+                                <div class="enroll">
+                                    <a href="#">Enroll Now</a>
+                                    <p>$400.00</p>
+                                </div>
+                            </div>
+                        </div>   
+                    </div>
+                    <div class="course-contents" id="recomended">
+                        <div class="row-one">
+                            <div>
+                                <img src="images/recomended/reco-course1.jpg">
+                                <div class="titile-rating">
+                                    <p>Tech</p>
+                                    <div class="star">
+                                        <i class="fa fa-star-o"></i>
+                                        <p>5.0</p>
+                                    </div>   
+                                </div>
+                                <div class="course-title">
+                                    <h3>Embeded system</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse eos, voluptates nam.</p>
+                                </div>
+                                <div class="enroll">
+                                    <a href="#">Enroll Now</a>
+                                    <p>$400.00</p>
+                                </div>
+                            </div>
+                            <div>
+                                <img src="images/recomended/reco-course2.jpeg">
+                                <div class="titile-rating">
+                                    <p>Programming</p>
+                                    <div class="star">
+                                        <i class="fa fa-star-o"></i>
+                                        <p>5.0</p>
+                                    </div>
+                                </div>
+                                <div class="course-title">
+                                    <h3>Introduction to C</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Esse eos, voluptates nam.</p>
+                                </div>
+                                <div class="enroll">
+                                    <a href="#">Enroll Now</a>
+                                    <p>$400.00</p>
+                                </div>
+                            </div>
+                            <div>
+                                <img src="images/recomended/reco-course3.jpeg">
+                                <div class="titile-rating">
+                                    <p>Business</p>
+                                    <div class="star">
+                                        <i class="fa fa-star-o"></i>
+                                        <p>5.0</p>
+                                    </div>
+                                </div>
+                                <div class="course-title">
+                                    <h3>Management</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse eos, voluptates nam.</p>
+                                </div>
+                                <div class="enroll">
+                                    <a href="#">Enroll Now</a>
+                                    <p>$400.00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row-three">
+                            <div>
+                                <img src="images/course7.jpg">
+                                <div class="titile-rating">
+                                    <p>Coding</p>
+                                    <div class="star">
+                                        <i class="fa fa-star-o"></i>
+                                        <p>5.0</p>
+                                    </div>
+                                </div>
+                                <div class="course-title">
+                                    <h3>Mobile App Development</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse eos, voluptates nam.</p>
+                                </div>
+                                <div class="enroll">
+                                    <a href="#">Enroll Now</a>
+                                    <p>$400.00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="course-contents" id="best">
+                        <div class="row-two">
+                            <div>
+                                <img src="images/best/best-course1.jpeg">
+                                <div class="titile-rating">
+                                    <p>banking</p>
+                                    <div class="star">
+                                        <i class="fa fa-star-o"></i>
+                                        <p>5.0</p>
+                                    </div>   
+                                </div>
+                                <div class="course-title">
+                                    <h3>Finance</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse eos, voluptates nam.</p>
+                                </div>
+                                <div class="enroll">
+                                    <a href="#">Enroll Now</a>
+                                    <p>$400.00</p>
+                                </div>
+                            </div>
+                            <div>
+                                <img src="images/best/best-course2.jpeg">
+                                <div class="titile-rating">
+                                    <p>Art</p>
+                                    <div class="star">
+                                        <i class="fa fa-star-o"></i>
+                                        <p>5.0</p>
+                                    </div>
+                                </div>
+                                <div class="course-title">
+                                    <h3>Accounting</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Esse eos, voluptates nam.</p>
+                                </div>
+                                <div class="enroll">
+                                    <a href="#">Enroll Now</a>
+                                    <p>$400.00</p>
+                                </div>
+                            </div>
+                            <div>
+                                <img src="images/best/best-course3.jpeg">
+                                <div class="titile-rating">
+                                    <p>Marketing</p>
+                                    <div class="star">
+                                        <i class="fa fa-star-o"></i>
+                                        <p>5.0</p>
+                                    </div>
+                                </div>
+                                <div class="course-title">
+                                    <h3>Internet Marketing</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse eos, voluptates nam.</p>
+                                </div>
+                                <div class="enroll">
+                                    <a href="#">Enroll Now</a>
+                                    <p>$400.00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row-three">
+                            <div>
+                                <video  autoplay muted loop>
+                                    <source src="videos/video2.mp4">
+                                </video>
+                                <div class="titile-rating">
+                                    <p>virtual</p>
+                                    <div class="star">
+                                        <i class="fa fa-star-o"></i>
+                                        <p>5.0</p>
+                                    </div>
+                                </div>
+                                <div class="course-title">
+                                    <h3>Virtual Assistance</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse eos, voluptates nam.</p>
+                                </div>
+                                <div class="enroll">
+                                    <a href="#">Enroll Now</a>
+                                    <p>$400.00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="all-courses">
+                    <a href="#">View All Courses</a>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="header">
+                <div class="header-text">
+                    <h2>Subscribe to our newsteller</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="header-form">
+                    <div class="email">
+                        <input type="email" placeholder="Enter your email">
+                    </div>
+                    <div class="subscribe"></div>
+                    <a href="#">Subsrcibe</a>
+                </div>
+            </div>
+            <div class="policy">
+                <p>By subscribing you agree to with our <a href="#">Privacy Policy</a></p>
+            </div>
+            <div class="links">
+                <div>
+                    <img src="images/logo.png">
+                </div>
+                <div>
+                    <h4>Courses</h4>
+                    <a href="#">Business</a>
+                    <a href="#">Development</a>
+                    <a href="#">Techonology</a>
+                    <a href="#">Design</a>
+                    <a href="#">Programming</a>
+                </div>
+                <div>
+                    <h4>Resources</h4>
+                    <a href="#">Career</a>
+                    <a href="#">Resume</a>
+                    <a href="#">Learning</a>
+                    <a href="#">Interview Preparation</a>
+                    <a href="#">Jobs</a>
+                </div>
+                <div>
+                    <h4>About Us</h4>
+                    <a href="#">Contact</a>
+                    <a href="#">Help/Support</a>
+                    <a href="#">FAQ</a>
+                    <a href="#">Terms and Conditions</a>
+                    <a href="#">Partners</a>
+                </div>
+            </div>
+            <hr>
+            <div class="rights-icons">
+                <div class="rights">
+                    <p>&copy;2024 Developed by Omiachi</p>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookies Settings</a>
+                </div>
+                <div class="icons">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-x-twitter"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
